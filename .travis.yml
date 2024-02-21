@@ -22,6 +22,6 @@ script:
   # - python newfies/manage.py test -s -x --with-xtraceback --with-color
   #- python newfies/manage.py test --settings=settings_travis -s --with-progressive --ignore-files=api_tests.py
 # whitelist
-branches:
-  only:
-    - master
+# branches:
+#   only:
+#     - develop
