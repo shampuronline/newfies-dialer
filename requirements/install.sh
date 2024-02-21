@@ -22,7 +22,7 @@ done
 echo "Install Django requirements..."
 for line in $(cat requirements/django.txt | grep -v \#)
 do
-    pip install $line    #django-admin-tools
+    pip install $line django-admin-tools==0.5.2
 done
 
 echo "Install Dev requirements..."
