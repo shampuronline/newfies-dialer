@@ -5,9 +5,9 @@ django-urlauth==0.1.8
 django-uuidfield==0.5.0
 #django-memcache-status==1.1
 django-cache-utils==0.7.2
-django-picklefield==0.3.1
+django-picklefield==0.3.2
 django-jsonfield==0.9.13
-django-countries==3.2
+django-countries==3.2.0
 django-redis-cache==0.13.0
 django-redisboard==1.2.0
 django-admin-sortable==1.8.0
@@ -31,7 +31,6 @@ django-genericadmin==0.6.1
 django-bower==5.0.2
 django-cors-headers==1.0.0
 #git+http://github.com/hmarr/django-ses.git
-##git+http://github.com/pinax/django-mailer
 git+http://github.com/pinax/django-mailer@1.1.0
 django-activelink==0.4
 git+http://github.com/areski/django-sms-gateway.git
