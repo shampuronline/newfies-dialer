@@ -24,4 +24,4 @@ script:
 # whitelist
 branches:
   only:
-    - develop
+    - master
