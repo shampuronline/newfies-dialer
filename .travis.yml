@@ -19,7 +19,6 @@ before_script:
   # - pyflakes -x W newfies
 script:
   - pip list
-  - echo '=Start='
   - py.test newfies/appointment/tests.py --ds=newfies.newfies_dialer.settings_test
   # - python newfies/manage.py test -s -x --with-xtraceback --with-color
   #- python newfies/manage.py test --settings=settings_travis -s --with-progressive --ignore-files=api_tests.py
