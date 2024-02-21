@@ -124,6 +124,7 @@ esac
 
 if [ $INSTALL_FS = "yes" ]; then
     #Install Freeswitch
+    echo '-==Install Freeswitch==-'
     cd /usr/src/
     wget --no-check-certificate  https://raw.githubusercontent.com/gudge25/newfies-dialer/$BRANCH/install/install-freeswitch.sh -O install-freeswitch.sh
     bash install-freeswitch.sh
@@ -131,6 +132,7 @@ if [ $INSTALL_FS = "yes" ]; then
 fi
 
 #Install Newfies
+echo '-==Install Newfies==-'
 cd /usr/src/
 wget --no-check-certificate https://raw.githubusercontent.com/gudge25/newfies-dialer/$BRANCH/install/install-newfies.sh -O install-newfies.sh
 bash install-newfies.sh
