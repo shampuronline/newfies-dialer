@@ -25,3 +25,5 @@ script:
 # branches:
 #   only:
 #     - develop
+file: "newfies/debug.log"
+  skip_cleanup: true
