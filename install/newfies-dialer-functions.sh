@@ -397,7 +397,7 @@ func_setup_virtualenv() {
             pip install setuptools --no-use-wheel --upgrade
         ;;
     esac
-    
+
     pip install pbr==0.11.1
     pip install virtualenv==16.7.10
     pip install stevedore==1.3.0
@@ -809,7 +809,7 @@ func_install_frontend(){
     func_install_rabbitmq
 
     #Create and enable virtualenv
-    ##func_setup_virtualenv
+    func_setup_virtualenv
 
     #Backup
     ##func_backup_prev_install
