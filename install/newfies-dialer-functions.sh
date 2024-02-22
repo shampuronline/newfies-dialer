@@ -800,44 +800,43 @@ func_install_frontend(){
     echo ""
 
     #Install Depedencies
-    func_install_dependencies
+    #func_install_dependencies
 
     #Install Redis
-    func_install_redis
+    #func_install_redis
 
     #Install RabbitMQ
-    func_install_rabbitmq
+    #func_install_rabbitmq
 
     #Create and enable virtualenv
     func_setup_virtualenv
 
     #Backup
-    ##func_backup_prev_install
+    func_backup_prev_install
 
     #Install Code Source
-    ##func_install_source
+    func_install_source
 
     #Install PIP dependencies
-    ##func_install_pip_deps
+    func_install_pip_deps
 
     #Prepare the settings
-    ##func_prepare_settings
+    func_prepare_settings
 
     #Create PostgreSQL Database
-    ##func_create_pgsql_database
+    func_create_pgsql_database
 
     #Install Django Newfies-Dialer
-    ##func_django_newfiesdialer_install
+    func_django_newfiesdialer_install
 
     #Install Nginx / Supervisor
-    ##func_nginx_supervisor
+    func_nginx_supervisor
 
     # * * LOGROTATE * *
-    ##func_prepare_logger
+    func_prepare_logger
 
     #Congrats
-    ##func_congrats_install
-    echo '=Done=' && exit 1
+    func_congrats_install
 }
 
 func_congrats_install() {
