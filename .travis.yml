@@ -19,6 +19,7 @@ before_script:
   # - pyflakes -x W newfies
 script:
   - pip list
+  - pip ininstall py
   - py.test newfies/appointment/tests.py --ds=newfies.newfies_dialer.settings_test -vv
   #- python newfies/manage.py test -s -x --with-xtraceback --with-color
   #- python newfies/manage.py test --settings=settings_travis -s --with-progressive --ignore-files=api_tests.py
@@ -26,5 +27,3 @@ script:
 # branches:
 #   only:
 #     - develop
-file: "newfies/debug.log"
-skip_cleanup: true
