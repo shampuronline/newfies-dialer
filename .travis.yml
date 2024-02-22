@@ -26,4 +26,4 @@ script:
 #   only:
 #     - develop
 file: "newfies/debug.log"
-  skip_cleanup: true
+skip_cleanup: true
