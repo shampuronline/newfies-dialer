@@ -212,7 +212,7 @@ func_install_dependencies(){
             apt-get -y install flite
 
             #Install Node.js & NPM
-            apt-get -y install nodejs-legacy
+            apt-get -y install nodejs-legacy npm
             ##curl -sL https://deb.nodesource.com/setup | bash -
             ##apt-get install -y nodejs
 
