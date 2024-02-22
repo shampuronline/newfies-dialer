@@ -300,7 +300,7 @@ func_install_dependencies(){
     rm -rf luarocks
     # wget --no-check-certificate http://luarocks.org/releases/luarocks-2.1.2.tar.gz
     #Use Github for sources
-    wget --no-check-certificate https://github.com/keplerproject/luarocks/archive/v2.1.2.tar.gz -O luarocks-2.1.2.tar.gz
+    wget --no-check-certificate https://github.com/keplerproject/luarocks/archive/v2.4.4.tar.gz -O luarocks-2.4.4.tar.gz
     tar zxf luarocks-*.tar.gz
     rm -rf luarocks-*.tar.gz
     mv luarocks-* luarocks
