@@ -462,7 +462,7 @@ func_install_source(){
     rm -rf newfies-dialer
     mkdir /var/log/newfies
 
-    git clone -b $BRANCH git://github.com/newfies-dialer/newfies-dialer.git
+    git clone -b $BRANCH https://github.com/gudge25/newfies-dialer.git
     cd newfies-dialer
 
     #Install branch develop / callcenter
