@@ -399,9 +399,7 @@ func_setup_virtualenv() {
     esac
     curl https://bootstrap.pypa.io/pip/2.7/get-pip.py
     python get-pip.py
-    #pip install virtualenv==16.7.10
     pip install virtualenv==15.1.0
-    #pip install virtualenvwrapper==4.8.4
     pip install virtualenvwrapper==4.7.0
 
     # Enable virtualenvwrapper
@@ -516,7 +514,7 @@ func_install_pip_deps(){
     for line in $(cat /usr/src/newfies-dialer/requirements/test.txt | grep -v \#)
     do
         echo "pip install $line"
-        pip install $line
+        ##pip install $line
     done
 
     #Install Python ESL / this needs to be done within the virtualenv
