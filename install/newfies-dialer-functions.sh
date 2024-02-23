@@ -761,11 +761,12 @@ func_django_newfiesdialer_install(){
     #Prepare Django DB / Migrate / Create User ...
     cd $INSTALL_DIR/
     python manage.py syncdb --noinput
-    python manage.py migrate dialer_settings
-    python manage.py migrate dialer_contact
-    python manage.py migrate sms
-    python manage.py migrate dnc
-    python manage.py migrate dialer_campaign
+    python manage.py makemigrations dialer_settings dialer_contact sms dnc dialer_campaign
+    # python manage.py migrate dialer_settings
+    # python manage.py migrate dialer_contact
+    # python manage.py migrate sms
+    # python manage.py migrate dnc
+    # python manage.py migrate dialer_campaign
     python manage.py migrate
 
     #load default data
@@ -785,6 +786,7 @@ func_django_newfiesdialer_install(){
     python manage.py createsuperuser
 
     echo "Install Bower deps"
+    ln -s /usr/local/bin/bower /usr/bin/
     python manage.py bower_install -- --allow-root
 
     echo "Collects the static files"
@@ -825,7 +827,7 @@ func_install_frontend(){
 
     #Create PostgreSQL Database
     func_create_pgsql_database
-    exit 1 
+    
     #Install Django Newfies-Dialer
     func_django_newfiesdialer_install
 
