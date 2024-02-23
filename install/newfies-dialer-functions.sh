@@ -397,11 +397,12 @@ func_setup_virtualenv() {
             pip install setuptools --no-use-wheel --upgrade
         ;;
     esac
-
-    pip install pbr==0.11.1
-    pip install virtualenv==16.7.10
-    pip install stevedore==1.3.0
-    pip install virtualenvwrapper==4.8.4
+    curl https://bootstrap.pypa.io/pip/2.7/get-pip.py
+    python get-pip.py
+    #pip install virtualenv==16.7.10
+    pip install virtualenv==15.1.0
+    #pip install virtualenvwrapper==4.8.4
+    pip install virtualenvwrapper==4.7.0
 
     # Enable virtualenvwrapper
     chk=`grep "virtualenvwrapper" ~/.bashrc|wc -l`
