@@ -397,7 +397,7 @@ func_setup_virtualenv() {
             pip install setuptools --no-use-wheel --upgrade
         ;;
     esac
-    curl https://bootstrap.pypa.io/pip/2.7/get-pip.py
+    curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
     python get-pip.py
     pip install virtualenv==15.1.0
     pip install virtualenvwrapper==4.7.0
@@ -514,7 +514,7 @@ func_install_pip_deps(){
     for line in $(cat /usr/src/newfies-dialer/requirements/test.txt | grep -v \#)
     do
         echo "pip install $line"
-        ##pip install $line
+        pip install $line
     done
 
     #Install Python ESL / this needs to be done within the virtualenv
@@ -808,7 +808,7 @@ func_install_frontend(){
 
     #Install RabbitMQ
     func_install_rabbitmq
-    
+
     #Create and enable virtualenv
     func_setup_virtualenv
 
