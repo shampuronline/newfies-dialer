@@ -399,6 +399,7 @@ func_setup_virtualenv() {
     esac
     curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
     python get-pip.py
+    pip install pbr==2.0.0
     pip install virtualenv==15.1.0
     pip install virtualenvwrapper==4.7.0
 
