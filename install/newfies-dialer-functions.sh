@@ -808,7 +808,7 @@ func_install_frontend(){
 
     #Install RabbitMQ
     func_install_rabbitmq
-    exit 1
+    
     #Create and enable virtualenv
     func_setup_virtualenv
 
