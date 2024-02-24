@@ -121,6 +121,7 @@ case $DIST in
     ;;
 esac
 
+echo '{"strict-ssl": false}' >> ~/.bowerrc
 
 if [ $INSTALL_FS = "yes" ]; then
     #Install Freeswitch
