@@ -786,6 +786,7 @@ func_django_newfiesdialer_install(){
     python manage.py createsuperuser
 
     echo "Install Bower deps"
+    echo '{"strict-ssl": false}' >> ~/.bowerrc
     ln -s /usr/local/bin/bower /usr/bin/
     python manage.py bower_install -- --allow-root
 
