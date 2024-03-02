@@ -21,7 +21,6 @@
 # django-admin-tools==0.5.2
 # django-country-dialcode==0.5.1
 # django-audiofield==0.6.6
-
 # django-admin-tools-stats==0.5.5
 # django-lets-go==2.9.3
 # django-extensions==1.5.2
@@ -65,7 +64,7 @@ git+http://github.com/cdr-stats/django-pagination.git
 django-admin-tools==0.5.2
 django-country-dialcode==0.5.1
 django-audiofield==0.6.6
-django-qsstats-magic==0.7.2 # Updated
+django-qsstats-magic==0.7.2
 django-admin-tools-stats==0.5.5
 django-lets-go==2.9.3
 django-extensions==1.5.2
