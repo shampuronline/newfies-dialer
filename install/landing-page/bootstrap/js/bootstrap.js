@@ -61,6 +61,10 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
     $.support.transition = transitionEnd()
   })
 
+  $.escapeSelector = function (sel) {
+    return sel.replace(/([ #;?%&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1');
+  };
+
 }(jQuery);
 
 /* ========================================================================
@@ -1616,9 +1620,9 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
     this.$body          = $('body')
     this.$scrollElement = this.$element.on('scroll.bs.scroll-spy.data-api', process)
     this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
-    this.selector       = (this.options.target
-      || ((href = $(element).attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
-      || '') + ' .nav li > a'
+    var sanitizedTarget = this.options.target ? $.escapeSelector(this.options.target) : '';
+    var sanitizedHref = (href = $(element).attr('href')) ? $.escapeSelector(href.replace(/.*(?=#[^\s]+$)/, '')) : '';
+    this.selector       = (sanitizedTarget || sanitizedHref || '') + ' .nav li > a'
     this.offsets        = $([])
     this.targets        = $([])
     this.activeTarget   = null
