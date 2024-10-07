@@ -664,7 +664,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
     var data    = $target.data('bs.collapse')
     var option  = data ? 'toggle' : $this.data()
     var parent  = $this.attr('data-parent')
-    var $parent = parent && $(parent)
+    var $parent = parent && $(document).find($.escapeSelector(parent))
 
     if (!data || !data.transitioning) {
       if ($parent) $parent.find('[data-toggle=collapse][data-parent="' + parent + '"]').not($this).addClass('collapsed')
