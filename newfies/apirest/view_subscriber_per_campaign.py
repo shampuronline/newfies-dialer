@@ -83,8 +83,8 @@ class SubscriberPerCampaignList(APIView):
                 "LEFT JOIN dialer_campaign ON " \
                 "dialer_callrequest.campaign_id=dialer_campaign.id " \
                 "WHERE dialer_subscriber.campaign_id = %s " \
-                "AND dialer_subscriber.duplicate_contact = '%s'" \
-                % (str(campaign_id), str(contact_id))
+                "AND dialer_subscriber.duplicate_contact = %s"
+            cursor.execute(sql_statement, (campaign_id, contact_id))
         else:
             sql_statement = "SELECT DISTINCT contact_id, last_attempt, " \
                 "count_attempt, completion_count_attempt, dialer_subscriber.status, " \
@@ -95,10 +95,8 @@ class SubscriberPerCampaignList(APIView):
                 "dialer_subscriber.id " \
                 "LEFT JOIN dialer_campaign ON " \
                 "dialer_callrequest.campaign_id=dialer_campaign.id " \
-                "WHERE dialer_subscriber.campaign_id" \
-                "= %s" % (str(campaign_id))
-
-        cursor.execute(sql_statement)
+                "WHERE dialer_subscriber.campaign_id = %s"
+            cursor.execute(sql_statement, (campaign_id,))
         row = cursor.fetchall()
 
         result = []
