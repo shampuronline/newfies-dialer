@@ -1,21 +1,26 @@
 TODO
-====
-1- apt file
+== ==
+1 - apt file
 
-deb http://archive.debian.org/debian/ jessie main contrib non-free
-deb http://archive.debian.org/debian-security jessie/updates main contrib non-free
+deb http:
+    //archive.debian.org / debian / jessie main contrib non - free
+deb http:
+    //archive.debian.org / debian - security jessie / updates main contrib non - free
 
-2- be sure installed
-apt-transport-https
+2 - be sure installed
+apt - transport - https
 npm
 
-3- put
+3 - put
 {"strict-ssl": false}
-to ~/.bowerrc 
+to ~ / .bowerrc
 
-4-create a file  to getrid of verification
-/etc/apt/apt.conf.d/99forceyes
+4 - create a file  to getrid of verification
+/etc / apt / apt.conf.d / 99forceyes
 
 and put
-APT::Get::force-yes "true";
-
+APT:
+    :
+        Get:
+            :
+                force - yes "true"

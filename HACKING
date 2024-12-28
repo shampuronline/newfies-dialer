@@ -1,9 +1,14 @@
 Nova Style Commandments
-=======================
+== == == == == == == == == == == =
 
-Step 1: Read http://www.python.org/dev/peps/pep-0008/
-Step 2: Read http://www.python.org/dev/peps/pep-0008/ again
-Step 3: Read on
+Step 1:
+    Read http:
+        //www.python.org / dev / peps / pep - 0008/
+Step 2:
+    Read http:
+        //www.python.org / dev / peps / pep - 0008 / again
+Step 3:
+    Read on
 
 Imports
 -------
@@ -13,22 +18,23 @@ Imports
 - thou shalt "from nova import vendor" before importing third party code
 - thou shalt organize your imports according to the following template
 
-::
-  # vim: tabstop=4 shiftwidth=4 softtabstop=4
-  {{stdlib imports in human alphabetical order}}
-  \n
-  from nova import vendor
-  {{vendor imports in human alphabetical order}}
-  \n
-  {{nova imports in human alphabetical order}}
-  \n
-  \n
-  {{begin your code}}
+:
+    :
+        # vim: tabstop=4 shiftwidth=4 softtabstop=4
+    {{stdlib imports in human alphabetical order}}
+    \n
+    from nova import vendor
+    {{vendor imports in human alphabetical order}}
+    \n
+    {{nova imports in human alphabetical order}}
+    \n
+    \n
+    {{begin your code}}
 
 
 General
 -------
-- thou shalt put two newlines twixt toplevel code (funcs, classes, etc)
+- thou shalt put two newlines twixt toplevel code(funcs, classes, etc)
 - thou shalt put one newline twixt methods in classes and anywhere else
 - thou shalt not write "except:", use "except Exception:" at the very least
 - thou shalt include your name with TODOs as in "TODO(termie)"
@@ -38,18 +44,20 @@ General
 
 Human Alphabetical Order Examples
 ---------------------------------
-::
-  import httplib
-  import logging
-  import random
-  import StringIO
-  import time
-  import unittest
-
+:
+    :
+    import httplib
+    import logging
+    import random
+    import StringIO
+    import time
+    import unittest
 
 
 Tool to make code PEP8 compliant
 --------------------------------
-- Install : https://github.com/cburroughs/pep8
-- Usage in your project directory : pep8 --statistics --filename=*.py --show-source --show-pep8 .
-
+- Install:
+    https:
+        //github.com / cburroughs / pep8
+- Usage in your project directory:
+    pep8 - -statistics - -filename = *.py - -show - source - -show - pep8 .

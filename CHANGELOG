@@ -1,19 +1,25 @@
-================
- Change history
-================
+== == == == == == == ==
+    Change history
+== == == == == == == ==
 
-.. contents::
-    :local:
+.. contents:
+    :
+    :
+        local:
 
 
-.. _version-1.0.2:
+.. _version - 1.0.2:
 
 1.0.2
-=====
-:status: DEVELOPMENT
-:branch: master
+== == =
+:
+    status:
+        DEVELOPMENT
+:
+    branch:
+        master
 
-.. _v102-fixes:
+.. _v102 - fixes:
 
 Fixes
 -----
@@ -21,15 +27,18 @@ Fixes
 * Fix install script to support MYSQL on installation
 
 
-
-.. _version-1.0.1:
+.. _version - 1.0.1:
 
 1.0.1
-=====
-:status: DEVELOPMENT
-:branch: master
+== == =
+:
+    status:
+        DEVELOPMENT
+:
+    branch:
+        master
 
-.. _v101-fixes:
+.. _v101 - fixes:
 
 Fixes
 -----
@@ -37,27 +46,28 @@ Fixes
 * Fix the plivo install script reference
 
 
-
-.. _version-1.0.0:
+.. _version - 1.0.0:
 
 1.0.0
-=====
-:status: DEVELOPMENT
-:branch: master
+== == =
+:
+    status:
+        DEVELOPMENT
+:
+    branch:
+        master
 
-.. _v100-news:
+.. _v100 - news:
 
-News    
+News
 ----
 
-* Newfies-Dialer first stable version is released.
+* Newfies - Dialer first stable version is released.
 
 
-.. _v100-fixes:
+.. _v100 - fixes:
 
 Fixes
 -----
 
 * Empty, fixes will come
-
-
